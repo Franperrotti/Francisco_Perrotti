@@ -1,0 +1,231 @@
+/* Para toda la pagina */
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0px;
+  }
+  
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .container_about {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #d9d9d9
+  }
+
+header{
+    background-color: black ;
+    height: 130px;
+    width: 100%;
+    overflow: hidden;
+
+  }
+
+/* Nav */
+
+  .logo{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    float: left;
+
+
+  }
+  .secciones{
+    float: right;
+    height: 30px;
+    width: 30%;
+  }
+  .nombre_about:hover{
+    color: #d9d9d9;
+    border-bottom: 1px solid  #d9d9d9;
+  }
+  .nombre_about{
+    text-decoration: none;
+    float: right;
+    margin-right: 10%;
+    margin-top: 10%;
+    color: white;
+  }
+
+
+/* Principal */
+
+  
+  .presentacion{
+    height: 100px;
+    margin: 10px 20px;
+  }
+
+  .imagen_back_arriba{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+  
+  }
+
+  .contenido_porfolio{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    
+  }
+
+
+  .item_del_porfolio{
+   position: relative;
+   padding: 10px;
+  }
+
+.imagen_back_porfolio{
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.texto_imagen_porfolio{
+ position: absolute;
+ top: 0;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ height: 100%;
+ text-align: center;
+ padding-left: 100px;
+ padding-right: 100px;
+}
+.logo_de_porfolio img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.texto_imagen_porfolio .subtitulo_items{
+    transition:1s;
+    color: transparent;
+    font-weight: 600;
+
+   }
+
+.texto_imagen_porfolio:hover .subtitulo_items{
+ font-weight: 600;
+ color: azure
+}
+
+/* esto lo estamos agregando luego con java script */
+.imagen_fondo_negro{
+    transition: 1s;
+    filter: brightness(10%);
+}
+/* Footer */
+.footer{
+    background-color: black ;
+    height: 130px;
+    overflow: hidden;
+    margin-top: 10px;
+    width: 100%;
+   
+    
+
+}
+
+
+/* about */
+.principal_about{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    width: 100%;
+    
+
+}
+.profile_image{
+    margin-top: 10px;
+    margin-left: 50px;
+
+
+}
+
+.profile_content{
+    font-family: "Times New Roman", Times, serif;
+    margin-left: 10px;
+
+}
+.profile_content2{
+    font-family: "Times New Roman", Times, serif;
+    margin-left: 10px;
+
+}
+
+@media (min-width:320px){
+   
+    .contenido_porfolio{
+        display: grid;
+        grid-template-columns: 1fr ;
+     
+
+      
+    }
+    .principal_about{
+        display: grid;
+        grid-template-columns: 1fr ;
+        width: 100%;
+        
+    
+    }
+}
+
+@media (min-width:720px){
+   
+    .contenido_porfolio{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+       
+      
+    }
+    .principal_about{
+        display: grid;
+     
+        grid-template-columns: 1fr 1fr ;
+        width: 100%;
+        
+    
+    }
+}
+@media (min-width:1200px){
+  
+    .contenido_porfolio{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      
+      
+    }
+
+    .footer{
+        background-color: black ;
+        height: 130px;
+        overflow: hidden;
+        margin-top: 145px;
+      
+    }
+
+    .principal_about{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        width: 100%;
+        
+    
+    }
+}
